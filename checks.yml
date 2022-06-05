@@ -254,7 +254,7 @@ click:
   #
   # Decrease if players are bypassing, increase if legit players are getting flagged.
   # Lag may influence the detected CPS; set this number 1-2 higher than what you want.
-  max_cps: 18
+  max_cps: 16
 
   # Whether to analyze the player's CPS.
   check_cps: true
@@ -266,7 +266,7 @@ click:
   check_timing: true
 
   # Whether to add more violations for exceeding CPS.
-  dynamic_cps_vl_weight: true
+  dynamic_cps_vl_weight: false
 
   # Decay time and amount for violations.
   # Controls the speed in which violations expire.
@@ -292,7 +292,7 @@ move:
   disable_worlds: []
 
   # Amount of violations needed to cancel illegal movements. (-1 = don't cancel)
-  cancel_vl: 42
+  cancel_vl: 40
 
   # Whether to teleport players to the void if required.
   allow_setback_to_void: true
@@ -307,7 +307,7 @@ move:
     air_mdf: true # General air related hacks.
 
   # Deals the correct amount of damage after detection.
-  apply_damage: true
+  apply_damage: false
 
   # Increases the sensitivity of knockback checks.
   strict_kb_handling: false
